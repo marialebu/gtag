@@ -9,6 +9,6 @@ package Models;
  *
  * @author Felipe.Diaz
  */
-public class EntidadCertificada {
+public class EntidadCertificada implements Fuente{
     
 }

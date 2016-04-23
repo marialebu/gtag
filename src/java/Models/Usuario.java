@@ -9,10 +9,17 @@ package Models;
  *
  * @author Felipe.Diaz
  */
-public class Usuario {
+public class Usuario implements Fuente {
     private String nombre;
     private String correo;
-    private String contraseña;
+    private String contrasena;
+    
+    public Usuario(String nombre, String correo, String contrasena){
+        this.nombre = nombre;
+        this.contrasena = contrasena;
+        this.correo = correo;
+    }
+   
     
     /**
      * @return the nombre
@@ -45,15 +52,15 @@ public class Usuario {
     /**
      * @return the contraseña
      */
-    public String getContraseña() {
-        return contraseña;
+    public String getContrasena() {
+        return contrasena;
     }
 
     /**
      * @param contraseña the contraseña to set
      */
     public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+        this.contrasena = contrasena;
     }
     
     
