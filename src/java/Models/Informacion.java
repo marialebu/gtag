@@ -5,11 +5,19 @@
  */
 package Models;
 
+import java.util.ArrayList;
+import java.util.Date;
+
 /**
  *
  * @author Felipe.Diaz
  */
 public class Informacion {
+    public String titulo, resumen , detalle;
+    public Date fechaPublicacion, fechaAcontecimiento;
+    public String fuente;
+    public ArrayList<Categoria> categorias;
+    public Localizacion localización;
     
     
 }
